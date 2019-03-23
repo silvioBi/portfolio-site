@@ -105,7 +105,7 @@ class App extends Component {
           <LanguageBar />
 
           {/* The profile picture with the name and brief description */}
-          <ImageWithCaption width='50%' imgUrl='./images/me.png' title={name} text={text} />
+          <ImageWithCaption width='50%' imgUrl='./images/me.PNG' title={name} text={text} />
 
           {/* The theme toggle */}
           <ThemeCheckbox />
