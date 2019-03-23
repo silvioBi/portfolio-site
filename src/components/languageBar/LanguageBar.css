@@ -1,0 +1,26 @@
+.language-bar {
+    width: 100%;
+    padding-bottom: 1.8em;
+}
+
+.language-bar li {
+    display: inline;
+    text-align: center;
+}
+
+.language-bar li img {
+    display: inline-block;
+    padding: 1em;
+}
+
+.language-bar li img:hover {
+    opacity: .8;
+}
+
+.language-bar li .active {
+    opacity: 1;
+}
+
+.language-bar li .inactive {
+    opacity: .7;
+}

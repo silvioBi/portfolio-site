@@ -1,0 +1,108 @@
+/* The left sidebar with the avatar image */
+
+.sidenav {
+  height: 100%;
+  width: 20em;
+  position: fixed;
+  border-right: 1px solid var(--sidebar-border-color);
+  top: 0;
+  left: 0;
+  background: var(--sidebar-bg);
+  overflow-x: hidden;
+  padding: 1em;
+  padding-top: 2em;
+  color: var(--sidebar-text);
+  text-align: center;
+}
+
+/* The main content wrapper */
+
+.main {
+  margin-top: -395px;
+  margin-left: 22em;
+  padding: 2em;
+}
+
+/* The cards */
+
+.cards {
+  padding: 1.5em;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+
+/* The sections icons */
+
+.cards-icon {
+  margin: .15em;
+  font-size: 6em;
+}
+
+/* The sections icon descriptions */
+
+.card-description {
+  max-width: 240px;
+}
+
+/* The Get in touch form wrapper */
+
+.get-in-touch-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The oblique background */
+
+.skewed-bg {
+  position: relative;
+  background: var(--skewed-bg-color);
+  padding: 300px 0;
+  -webkit-transform: skew(0deg, -10deg);
+  -moz-transform: skew(0deg, -10deg);
+  -ms-transform: skew(0deg, -10deg);
+  -o-transform: skew(0deg, -10deg);
+  transform: skew(0deg, -10deg);
+  margin-top: -200px;
+  z-index: -1;
+  /* The color change transition when changing the theme, identical to the body transition */
+  transition: color 0.2s ease-out 0s, background 0.2s ease-out 0s;
+  transition-property: color, background;
+  transition-duration: 0.2s, 0.2s;
+  transition-timing-function: ease-out, ease-out;
+  transition-delay: 0s, 0s;
+}
+
+/* Media rules */
+
+@media only screen and (max-width: 1026px) {
+  /* Hide the sidebar and remove the main content left margin */
+  .sidenav {
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-20em, 0);
+    -webkit-transform: translate(-20em, 0);
+    -moz-transform: translate(-20em, 0);
+    -o-transform: translate(-20em, 0);
+    -ms-transform: translate(-20em, 0);
+    -webkit-transition: all 600ms;
+    transition: all 600ms;
+  }
+  .main {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1026px) {
+  /* Hide the sidebar and remove the main content left margin */
+  .sidenav {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
+  }
+}

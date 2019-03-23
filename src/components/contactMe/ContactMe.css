@@ -1,0 +1,50 @@
+
+
+.form-wrapper {
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--textNormal);
+}
+
+input:hover, textarea:hover, #submit:hover {
+    background: var(--sidebar-bg);
+    color: var(--textNormal);
+}
+
+textarea, input, #submit {
+    padding: 1em;
+    width: 100%;
+    border: solid 1px var(--textNormal);
+    background: transparent;
+    color: var(--textNormal);
+    font-size: 1em;
+    outline: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+textarea {
+    height: 110px;
+    max-height: 110px;
+}
+
+input {
+    height: 50px;
+    border-bottom: none;
+}
+
+#submit {
+    margin: -4px 0px 0px 0px;
+    cursor: pointer;
+    border-top: none;
+}

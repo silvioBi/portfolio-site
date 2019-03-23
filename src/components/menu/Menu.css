@@ -1,0 +1,43 @@
+/* The navbar */
+
+.navbar {
+    font-size: 1.2em;
+}
+
+.navbar li {
+    display: inline;
+    text-align: center;
+}
+
+.navbar li span {
+    display: inline-block;
+    padding: .75rem 0;
+    margin: 0;
+    color: var(--textLink);
+    text-decoration: none;
+}
+
+.navbar hr {
+    height: .07rem;
+    margin: 0;
+    background-color: var(--textLink);
+    border: none;
+    transition: .3s ease-in-out;
+}
+
+/* The main content */
+
+.content {
+    padding-top: 1em;
+    text-align: center;
+    height: 100%;
+}
+
+/* Media rules */
+
+@media only screen and (max-width: 1026px) {
+    /* Make the navbar links stack one over the other */
+    .navbar li {
+        display: block;
+    }
+}
